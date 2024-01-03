@@ -97,6 +97,49 @@ nav ul li a {
     padding: 50px 20px;
 }
 
+#jayu {
+    background-color: #e9e9e9;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.demo img{
+    width: 100%;
+    height: 70%;
+    object-fit: fill;
+}
+
+.introsr{
+    height: 300px;
+        width: 300px;
+        position: relative;
+}
+
+.introsr p{
+    width: 100%;
+        height: 100px;
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        margin: -50px 0 0 -50px;
+        text-align: justify;
+}
+
+.introsl {
+    height: 300px;
+    width: 300px;
+    position: relative;
+}
+
+.introsl p {
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    margin: -50px 0 0 -50px;
+    text-align: justify;
+}
 
 .gallery {
     display: flex;

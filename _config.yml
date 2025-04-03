@@ -16,7 +16,7 @@
 title: Junxi Li
 email: jul108@ucsd.edu
 description: >- # this means to ignore newlines until "baseurl:"
-  Junxi Li's personal webpage
+  Junxi Li's personal website - Math-CS student at UCSD specializing in Machine Learning and AI
 twitter_username: Els0771946407
 github_username: ericljx2020-gmail
 minimal_mistakes_skin: default
@@ -25,10 +25,9 @@ search: true
 # Build settings
 markdown: kramdown
 remote_theme: mmistakes/minimal-mistakes
+
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 include:
@@ -48,53 +47,15 @@ include:
 
 # Plugins (previously gems:)
 plugins:
-  - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
   - jemoji
   - jekyll-include-cache
+  - jekyll-redirect-from
 
-author:
-  name   : "Junxi(Eric) Li"
-  avatar : "/assets/images/bio-photo.PNG"
-  bio    : "Math-CS@UCSD"
-  location: "San Diego, CA"
-  links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://x.com/Els0771946407"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/ericljx2020-gmail"
-    - label: "Linkedin"
-      icon: "fab fa-fw fa-linkedin"
-      url: "https://instagram.com/"
-
-footer:
-  links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
-
+# Navigation
 defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
   # _pages
   - scope:
       path: "_pages"
@@ -103,9 +64,46 @@ defaults:
       layout: single
       author_profile: true
 
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
+# Site navigation
+navigation:
+  main:
+    - title: "About"
+      url: /about/
+    - title: "Resume"
+      url: /resume/
+
+author:
+  name   : "Junxi (Eric) Li"
+  avatar : "/assets/images/bio-photo.PNG"
+  bio    : "Math-CS Student @ UCSD"
+  location: "San Diego, CA"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:jul108@ucsd.edu"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/ericljx2020-gmail"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/junxi-li-02b263268/"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "/"
+
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/ericljx2020-gmail"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com"
+
+whitelist:
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jemoji
+  - jekyll-include-cache
+  - jekyll-redirect-from

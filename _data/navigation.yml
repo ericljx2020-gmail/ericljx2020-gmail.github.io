@@ -1,5 +1,7 @@
 main:
   - title: "About"
     url: /
+  - title: "Experience"
+    url: /experience/
   - title: "Resume"
     url: https://docs.google.com/document/d/1JVVVydy4SaOGByVpB7vIJ5RGJoRyMbnzg2RohwMB97Q/edit?usp=sharing
